@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-data class Person(val name:String)//Define a data class to store the data in the application
+data class Person(val name:String ,val intro:String ,val imageId:Int)//Define a data class to store the data in the application
 //We can call this class anywhere in the code because we have defined it out side the main class
 class MainActivity : AppCompatActivity() {
     private lateinit var contacts: MutableList<Person>
@@ -26,8 +26,12 @@ class MainActivity : AppCompatActivity() {
     private fun createContacts(): MutableList<Person> {
         //Define each of the item as a variable
         val contacts = mutableListOf<Person>()
-        for (i in 1..50) {
-            contacts.add(Person("Person $i"))//has all the information regarding app
+        val bioDataArray = resources.getStringArray(R.array.bio_data_array)
+        for (i in 1..10) {
+            val biodata = bioDataArray.getOrNull( i-1)?:""
+            val specificimagename = "person$i"
+            val imageresid = resources.getIdentifier(specificimagename,"drawable",packageName)
+            contacts.add(Person("Plant $i",biodata,imageresid))//has all the information regarding app
         }
         return contacts
 

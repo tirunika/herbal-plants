@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardBackgroundColor="#A0B2F6"
+
     app:cardCornerRadius="8dp"
     app:cardElevation="4dp"
     app:cardUseCompatPadding="true">
@@ -16,39 +15,39 @@
 
         <!-- TextView -->
         <TextView
-            android:id="@+id/itemTextView"
+            android:id="@+id/PlantText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
             android:fontFamily="serif"
-            android:text="@string/the_girl"
-            android:textColor="#22349E"
+            android:text="@string/plant"
+            android:textColor="#355E3B"
             android:textSize="28sp"
             android:textStyle="bold" />
 
         <!-- ImageView -->
         <ImageView
-            android:id="@+id/itemImageView"
+            android:id="@+id/PlantImage"
             android:layout_width="267dp"
             android:layout_height="298dp"
-            android:layout_below="@id/itemTextView"
+            android:layout_below="@id/PlantText"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="45dp"
             android:contentDescription="@string/todo"
             android:scaleType="centerCrop"
-            android:src="@drawable/girl1" />
+            android:src="@drawable/plant" />
 
         <!-- Button -->
         <Button
             android:id="@+id/itemButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/itemImageView"
+            android:layout_below="@id/PlantImage"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
-            android:backgroundTint="#132953"
+            android:backgroundTint="#355E3B"
             android:fontFamily="serif"
             android:text="@string/click_me" />
 

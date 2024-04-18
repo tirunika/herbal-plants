@@ -1,6 +1,9 @@
 package com.example.thegirl
 
 import android.annotation.SuppressLint
+import android.content.ContentValues.TAG
+import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,6 +23,19 @@ class ContactAdapter(private val contacts: MutableList<Person>):
     override fun onBindViewHolder(holder: ContactAdapter.ViewHolder, position: Int) {
         val contact = contacts[position]
         holder.tvName.text=contact.name
+        holder.itemView.setOnClickListener {
+            // Create an explicit intent to start DetailsActivity
+            val intent = Intent(context, DetailsActivity::class.java).apply {
+                putExtra("contact_name", contact.name)
+                putExtra("contact_bio", contact.intro)
+                putExtra("contact_image", contact.imageId)
+                Log.i(TAG,"biodata in constacts adapter")
+                Log.i(TAG,"intent onbindviewholder $position")
+            }
+            context.startActivity(intent)
+
+
+        }
 
 
     }
@@ -31,7 +47,7 @@ class ContactAdapter(private val contacts: MutableList<Person>):
 
     //Defining data for each view inside the item layout
     inner class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
-        val tvName: TextView = itemView.findViewById(R.id.itemTextView)
+        val tvName: TextView = itemView.findViewById(R.id.PlantText)
 
 
     }

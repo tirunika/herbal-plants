@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "446011872404",
+    "project_id": "fir-project-ad3cf",
+    "storage_bucket": "fir-project-ad3cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446011872404:android:7b1c3b8612c2f2f07d1081",
+        "android_client_info": {
+          "package_name": "com.example.thegirl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgS4Uu2mb5jp6tjKKoJvq84GjW0PjQPOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

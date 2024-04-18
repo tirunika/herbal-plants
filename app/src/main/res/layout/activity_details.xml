@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/PlantText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="lavender"
+        android:textColor="#355E3B"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <ImageView
+        android:id="@+id/PlantImage"
+        android:layout_width="267dp"
+        android:layout_height="298dp"
+        android:layout_below="@id/PlantText"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lavender"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/IntroText"
+        android:layout_width="371dp"
+        android:layout_height="234dp"
+        android:text="lavender_a_fragrant_flowering_plant_native_to_the_mediterranean_region_is_celebrated_for_its_soothing_aroma_and_versatile_uses_its_calming_properties_make_it_a_popular_choice_in_aromatherapy_while_its_subtle_flavor_enhances_both_sweet_and_savory_dishes_lavender_is_also_valued_for_its_antiseptic_qualities_making_it_a_common_ingredient_in_skincare_products_and_home_remedies"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="453dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
